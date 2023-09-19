@@ -6,6 +6,11 @@ let raio = diametro / 2;
 let velocidadeXBolinha = 6;
 let velocidadeYBolinha = 6;
 
+let xRaquete = 5;
+let yRaquete = 150;
+let raqueteComprimento = 10;
+let raqueteAltura = 90;
+
 function setup() {
   createCanvas(600, 400);
 }
@@ -13,8 +18,13 @@ function setup() {
 function draw() {
   background(0);
   mostraBolinha();
-  movimentaBolinha();
+  movimentaBolinha(); 
   verificaColisaoBorda();  
+  mostrarRaquete();
+}
+
+function mostrarRaquete() {
+  rect(xRaquete, yRaquete, raqueteComprimento, raqueteAltura);
 }
 
 function mostraBolinha() {
