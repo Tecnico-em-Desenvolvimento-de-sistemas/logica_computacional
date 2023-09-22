@@ -18,12 +18,12 @@ function setup() {
 function draw() {
   background(0);
   mostraBolinha();
-  movimentaBolinha(); 
+  movimentaBolinha();
   verificaColisaoBorda();  
-  mostrarRaquete();
+  mostraRaquete();
 }
 
-function mostrarRaquete() {
+function mostraRaquete() {
   rect(xRaquete, yRaquete, raqueteComprimento, raqueteAltura);
 }
 
