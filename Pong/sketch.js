@@ -15,12 +15,22 @@ function setup() {
   createCanvas(600, 400);
 }
 
+function movimentaRaquete() {
+  if (keyIsDown(UP_ARROW)) {
+    yRaquete = yRaquete - 10;  
+  }
+  if (keyIsDown(DOWN_ARROW)) {
+    yRaquete = yRaquete + 10;  
+  }
+}
+
 function draw() {
   background(0);
   mostraBolinha();
   movimentaBolinha();
   verificaColisaoBorda();  
   mostraRaquete();
+  movimentaRaquete();
 }
 
 function mostraRaquete() {
